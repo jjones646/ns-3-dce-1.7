@@ -414,6 +414,7 @@ DCE (poll)
 
 // SYS/EPOLL.H
 DCE (epoll_create)
+DCE (epoll_create1)
 DCE (epoll_ctl)
 DCE (epoll_wait)
 
@@ -676,6 +677,7 @@ NATIVE (__cmsg_nxthdr)
 NATIVE (lrintl)
 NATIVE (llrintl)
 NATIVE (ceil)
+NATIVE (ceilf)
 NATIVE (floor)
 NATIVE (exp)
 NATIVE (__isnan)
@@ -709,6 +711,9 @@ DCE (dlsym)
 DCE (dlclose)
 NATIVE (dlerror)
 NATIVE (dladdr)
+
+// sys/eventfd.h
+NATIVE (eventfd)
 
 #undef DCE
 #undef DCET
